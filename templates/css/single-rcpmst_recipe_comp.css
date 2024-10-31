@@ -1,0 +1,87 @@
+body {
+    font-size: <?php echo esc_html(get_option( 'rcpmst-plugin-settings' )['font_size']) ?>px;
+}
+table.recipeTable {
+    border: 1px solid #1C6EA4;
+    background-color: #EEEEEE;
+    width: 100%;
+    text-align: left;
+    border-collapse: collapse;
+}
+table.recipeTable td, table.recipeTable th {
+    border: 1px solid #AAAAAA;
+    padding: 3px 2px;
+}
+table.recipeTable tbody td {
+    font-size: <?php echo esc_html(get_option( 'rcpmst-plugin-settings' )['font_size']) ?>px;
+}
+table.recipeTable tr:nth-child(even) {
+    background: #D0E4F5;
+}
+table.recipeTable thead {
+    background: #1C6EA4;
+    background: -moz-linear-gradient(top, #5592bb 0%, #327cad 66%, #1C6EA4 100%);
+    background: -webkit-linear-gradient(top, #5592bb 0%, #327cad 66%, #1C6EA4 100%);
+    background: linear-gradient(to bottom, #5592bb 0%, #327cad 66%, #1C6EA4 100%);
+    border-bottom: 2px solid #444444;
+}
+table.recipeTable thead th {
+    font-size: <?php echo esc_html(get_option( 'rcpmst-plugin-settings' )['font_size'] + 2) ?>px;
+    font-weight: bold;
+    color: #FFFFFF;
+    border-left: 2px solid #D0E4F5;
+}
+table.recipeTable thead th:first-child {
+    border-left: none;
+}
+
+table.recipeTable tfoot td {
+    font-size: <?php echo esc_html(get_option( 'rcpmst-plugin-settings' )['font_size'] + 2) ?>px;
+}
+table.recipeTable tfoot .links {
+    text-align: right;
+}
+table.recipeTable tfoot .links a{
+    display: inline-block;
+    background: #1C6EA4;
+    color: #FFFFFF;
+    padding: 2px 8px;
+    border-radius: 5px;
+}
+.tab {
+    overflow: hidden;
+    border: 1px solid #ccc;
+    background-color: #f1f1f1;
+}
+
+/* Style the buttons that are used to open the tab content */
+.tab button {
+    background-color: inherit;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    transition: 0.3s;
+}
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+    background-color: #ddd;
+}
+
+/* Create an active/current tablink class */
+.tab button.active {
+    background-color: #ccc;
+}
+
+/* Style the tab content */
+.tabcontent {
+    padding: 6px 12px;
+    border: 1px solid #ccc;
+    border-top: none;
+}
+.quantityblock {
+    padding: 6px 12px;
+    border: 1px solid #ccc;	
+}
